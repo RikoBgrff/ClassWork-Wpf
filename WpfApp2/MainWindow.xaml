@@ -1,0 +1,148 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2" xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--<Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ListBox Name="listbox" 
+                 ScrollViewer.HorizontalScrollBarVisibility="Visible" 
+                 DisplayMemberPath="Model"
+                 SelectionChanged="listbox_SelectionChanged"
+                 SelectionMode="Multiple"
+                 
+                 >
+            
+        </ListBox>
+        <StackPanel Grid.Column="1" >
+            <StackPanel.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#12c2e9" Offset="0"></GradientStop>
+                    <GradientStop Color="#c471ed" Offset="0.6"></GradientStop>
+                    <GradientStop Color="#f64f59" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+        </StackPanel>
+        <StackPanel Margin="20" Grid.Column="1">
+            <TextBlock Name="ModelTxtbl" Margin="10" Text="Model: " FontSize="22" FontWeight="ExtraLight"></TextBlock>
+            <TextBlock Name="VendorTxtbl" Margin="10" Text="Vendor: " FontSize="22" FontWeight="ExtraLight"></TextBlock>
+            <TextBlock Name="YearTxtbl" Margin="10" Text="Year: " FontSize="22" FontWeight="ExtraLight"></TextBlock>
+            </StackPanel>
+    </Grid>-->
+    <!--<Grid>
+        <ComboBox Height="50" Width="300" >
+            <ComboBox.ItemsPanel >
+                <ItemsPanelTemplate >
+                    <VirtualizingStackPanel> </VirtualizingStackPanel>
+                </ItemsPanelTemplate>
+            </ComboBox.ItemsPanel>
+            <Button>Salam</Button>
+            <RadioButton>Aleykum</RadioButton>
+            <CheckBox>Necesen</CheckBox>
+            <ProgressBar Minimum="0" Maximum="100" Height="20" Width="200" Value="59"></ProgressBar>
+        </ComboBox>
+    </Grid>-->
+    <!--<Grid>
+        <ComboBox 
+            Name="combobox"
+            Height="30"
+            Margin="20"
+            Width="300" SelectionChanged="ComboBox_SelectionChanged"
+            >
+            <ComboBoxItem Background="Gold">
+                <StackPanel Orientation="Horizontal">
+                    <Image Width="100" Height="100" Source="marioGif.gif"></Image>
+                    <TextBlock 
+                        Text="Super Mario"
+                        TextAlignment="Center"
+                        VerticalAlignment="Center"
+                        Width="200"
+                        FontFamily="Georgia"
+                        FontSize="30"
+                        FontWeight="ExtraLight">
+                    </TextBlock>
+                    <Button Width="100" Margin="15" Content="A" FontSize="30" FontWeight="ExtraLight"></Button>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Background="pink">
+                <StackPanel Orientation="Horizontal">
+                    <Image Width="100" Height="100" Source="marioGif.gif"></Image>
+                    <TextBlock 
+                        Text="Super Mario"
+                        TextAlignment="Center"
+                        VerticalAlignment="Center"
+                        Width="200"
+                        FontFamily="Georgia"
+                        FontSize="30"
+                        FontWeight="ExtraLight">
+                    </TextBlock>
+                    <Button Width="100" Margin="15" Content="A" FontSize="30" FontWeight="ExtraLight"></Button>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Background="DarkCyan">
+                <StackPanel Orientation="Horizontal">
+                    <Image Width="100" Height="100" Source="marioGif.gif"></Image>
+                    <TextBlock 
+                        Text="Super Mario"
+                        TextAlignment="Center"
+                        VerticalAlignment="Center"
+                        Width="200"
+                        FontFamily="Georgia"
+                        FontSize="30"
+                        FontWeight="ExtraLight">
+                    </TextBlock>
+                    <Button Width="100" Margin="15" Content="A" FontSize="30" FontWeight="ExtraLight"></Button>
+                </StackPanel>
+            </ComboBoxItem>
+
+
+        </ComboBox>
+    </Grid>-->
+
+    <TabControl>
+        <TabItem Header="Home"
+                     Padding="15"
+                     FontSize="22"
+                     FontFamily="Georgia"
+                     FontWeight="Light">
+            <Grid Background="DeepPink">
+                <TextBlock>Home</TextBlock>
+            </Grid>
+        </TabItem>
+        <TabItem Header="About"
+                     Padding="15"
+                     FontSize="22"
+                     FontFamily="Georgia"
+                     FontWeight="Light">
+            <Grid Background="Green">
+                <TextBlock>About</TextBlock>
+            </Grid>
+        </TabItem>
+        <TabItem Header="News"
+                     Padding="15"
+                     FontSize="22"
+                     FontFamily="Georgia"
+                     FontWeight="Light">
+            <Grid Background="Magenta">
+                <TextBlock>News</TextBlock>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Contact"
+                     Padding="15"
+                     FontSize="22"
+                     FontFamily="Georgia"
+                     FontWeight="Light">
+            <Grid Background="CadetBlue">
+                <TextBlock>Contact</TextBlock>
+            </Grid>
+        </TabItem>
+
+
+    </TabControl>
+</Window>
